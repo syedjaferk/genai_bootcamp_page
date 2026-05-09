@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI Workshop | n8n + GenAI Mastery (Tamil)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; background-color: #ffffff; }
+        .n8n-orange { color: #ff6d5b; }
+        .n8n-bg-orange { background-color: #ff6d5b; }
+        .card-shadow { box-shadow: 0 4px 25px rgba(26, 36, 51, 0.06); }
+        .session-card { border-left: 4px solid #ff6d5b; transition: transform 0.2s; }
+        .session-card:hover { transform: translateY(-5px); }
+        
+        /* Carousel Animation */
+        .carousel-container { overflow: hidden; position: relative; }
+        .carousel-track { display: flex; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        .testimonial-card { min-width: 100%; }
+    </style>
+</head>
+<body class="text-[#1a2433]">
+
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="text-xl font-800 tracking-tighter uppercase">Parottasalna<span class="n8n-orange">_Lab</span></div>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-500">
+                <a href="#syllabus" class="hover:text-[#ff6d5b]">Syllabus</a>
+                <a href="#testimonials" class="hover:text-[#ff6d5b]">Success Stories</a>
+                <a href="#faq" class="hover:text-[#ff6d5b]">FAQ</a>
+            </div>
+            <a href="#register" class="n8n-bg-orange hover:opacity-90 text-white px-6 py-2 rounded-lg font-bold text-sm transition-all shadow-lg shadow-orange-500/20">Register Now</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 pt-32">
+        
+        <header class="text-center mb-24">
+            <h1 class="text-5xl md:text-7xl font-800 tracking-tight text-[#1a2433] mb-6">
+                Master <span class="n8n-orange">GenAI Flows</span> <br>In Your Language.
+            </h1>
+            <p class="text-xl text-gray-500 max-w-2xl mx-auto mb-12">
+                The technical 4-day deep dive into LLMs, MCP, and n8n. <br>
+                <strong>Logic in Tamil. Implementation in English.</strong>
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <span class="block text-gray-400 text-[10px] font-bold uppercase mb-1">Schedule</span>
+                    <span class="font-bold">Sat & Sun <br>(May 23, 24, 30, 31)</span>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <span class="block n8n-orange text-[10px] font-bold uppercase mb-1">Language</span>
+                    <span class="font-bold">Tamil (தமிழ்)</span>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <span class="block text-gray-400 text-[10px] font-bold uppercase mb-1">Level</span>
+                    <span class="font-bold">Newbie Friendly</span>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <span class="block text-gray-400 text-[10px] font-bold uppercase mb-1">Outcome</span>
+                    <span class="font-bold">Portfolio Project</span>
+                </div>
+            </div>
+        </header>
+
+        <section id="syllabus" class="mb-32">
+            <div class="flex items-center gap-4 mb-16">
+                <h2 class="text-3xl font-800 tracking-tight">8 Power Sessions</h2>
+                <div class="h-px bg-gray-100 flex-1"></div>
+            </div>
+
+            <div class="mb-12">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Weekend 1: The GenAI Foundation <b>(May 23rd/24th 2025 - Saturday) </b></h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 session-card card-shadow">
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Session 01 (May 23rd - 10:00 AM to 12:00 PM)</span>
+                        <h4 class="text-xl font-bold mt-1 mb-4">Introduction to Gen AI</h4>
+                        <ul class="text-sm space-y-3 text-gray-600">
+                            <li>• What is an LLM ?</li>
+                            <li>• LLM working model</li>
+                            <li>• Using Groq and Intro to Prompt Engineering </li>
+                            <li>• Zero Shot, Few Shot</li>
+                            <li>• System Prompting, Role Prompting</li>
+                            <li>• Contextual Prompting</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 session-card card-shadow">
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Session 02 (May 23rd - 2:00 PM to 4:00 PM)</span>
+                        <h4 class="text-xl font-bold mt-1 mb-4">Prompt Engineering </h4>
+                        <ul class="text-sm space-y-3 text-gray-600">
+                            <li>• Chain of Thoughts</li>
+                            <li>• ReAct Framework</li>
+                            <li>• Tree of Thoughts</li>
+                            <li>• CRISP Framework</li>
+                            <li>• RICE Framework</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 session-card card-shadow">
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Session 03 (May 24th - 10:00 AM to 12:00 PM)</span>
+                        <h4 class="text-xl font-bold mt-1 mb-4">Tool Calling & MCP Protocol Intro</h4>
+                        <ul class="text-sm space-y-3 text-gray-600">
+                            <li>• LLM tool calling</li>
+                            <li>• SQLite & DB access via tool calling</li>
+                            <li>• MCP Introduction</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 session-card card-shadow">
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Session 04 (May 24th - 2:00 PM to 4:00 PM)</span>
+                        <h4 class="text-xl font-bold mt-1 mb-4">MCP Protocol</h4>
+                        <ul class="text-sm space-y-3 text-gray-600">
+                            <li>• Using Tavily with MCP</li>
+                            <li>• Custom SQLite & DB access via MCP Servers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Weekend 2: Orchestration & Agents <b>(May 30th/31st 2025 - Saturday) </b></h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 session-card card-shadow">
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Session 05</span>
+                        <h4 class="text-xl font-bold mt-1 mb-4">n8n Fundamentals</h4>
+                        <ul class="text-sm space-y-3 text-gray-600">
+                            <li>• Webhooks, Cron & Polling Triggers</li>
+                            <li>• Telegram Integration</li>
+                            <li>• JS Code Nodes for Data Transformation</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 session-card card-shadow">
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Session 06</span>
+                        <h4 class="text-xl font-bold mt-1 mb-4">The AI Orchestrator</h4>
+                        <ul class="text-sm space-y-3 text-gray-600">
+                            <li>• Chat Memory & Persistent sessions</li>
+                            <li>• Vector Store Setup (Supabase/Pinecone)</li>
+                            <li>• RAG (Retrieval-Augmented Generation)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 session-card card-shadow" >
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Session 07</span>
+                        <h4 class="text-xl font-bold mt-1 mb-4">Automation with N8N</h4>
+                        <ul class="text-sm space-y-3 text-gray-600">
+                            <li>• Weather collector</li>
+                            <li>• Tavily MCP</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-gray-100 session-card card-shadow" >
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Session 08</span>
+                        <h4 class="text-xl font-bold mt-1 mb-4">Workflows</h4>
+                        <ul class="text-sm space-y-3 text-gray-600">
+                            <li>• Daily Quiz Sender with HTTP, AI Agent, MongoDB</li>
+                            <li>• Expenditure Tracker Automation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-20 bg-gray-50 rounded-[3rem] px-8 mb-32 text-center">
+            <h2 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-10">Trusted by Builders</h2>
+            
+            <div class="carousel-container max-w-3xl mx-auto">
+                <div class="carousel-track" id="track">
+                    <div class="testimonial-card">
+                        <p class="text-xl italic font-semibold text-gray-700 mb-6 px-4 leading-relaxed">"The explanation of LLM architecture in Tamil was eye-opening. I built an AI agent that manages my agency's client emails automatically!"</p>
+                        <h5 class="font-bold text-[#1a2433]">Karthik S.</h5>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest">Agency Founder</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xl italic font-semibold text-gray-700 mb-6 px-4 leading-relaxed">"n8n logic used to scare me, but the hands-on sessions simplified everything. Now I'm selling automation services."</p>
+                        <h5 class="font-bold text-[#1a2433]">Deepika R.</h5>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest">Freelance Dev</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xl italic font-semibold text-gray-700 mb-6 px-4 leading-relaxed">"Mastering MCP and local databases allowed me to build an AI for my company's internal data. 10/10 bootcamp!"</p>
+                        <h5 class="font-bold text-[#1a2433]">Rahul V.</h5>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest">Data Analyst</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-center gap-3 mt-10">
+                <button onclick="jump(0)" class="w-2 h-2 rounded-full bg-gray-300 hover:bg-orange-500 transition-all"></button>
+                <button onclick="jump(1)" class="w-2 h-2 rounded-full bg-gray-300 hover:bg-orange-500 transition-all"></button>
+                <button onclick="jump(2)" class="w-2 h-2 rounded-full bg-gray-300 hover:bg-orange-500 transition-all"></button>
+            </div>
+        </section>
+
+        <section id="faq" class="max-w-3xl mx-auto mb-32 px-4">
+            <h2 class="text-3xl font-800 text-center mb-12 tracking-tight">Common Questions</h2>
+            <div class="space-y-4">
+                <details class="group bg-white border border-gray-100 rounded-2xl p-6">
+                    <summary class="list-none font-bold flex justify-between items-center cursor-pointer">
+                        Is this bootcamp for non-coders?
+                        <span class="n8n-orange transition-transform group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="text-sm text-gray-500 mt-4 leading-relaxed">Yes. We focus on "Logic over Code." While we use technical tools, the core building is done through n8n’s visual interface and natural language prompts.</p>
+                </details>
+                <details class="group bg-white border border-gray-100 rounded-2xl p-6">
+                    <summary class="list-none font-bold flex justify-between items-center cursor-pointer">
+                        Will I have lifetime access to recordings?
+                        <span class="n8n-orange transition-transform group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="text-sm text-gray-500 mt-4">Yes. All 8 sessions are recorded and available for life, including access to our private Tamil AI Discord community.</p>
+                </details>
+                <details class="group bg-white border border-gray-100 rounded-2xl p-6">
+                    <summary class="list-none font-bold flex justify-between items-center cursor-pointer">
+                        Why learn in Tamil?
+                        <span class="n8n-orange transition-transform group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="text-sm text-gray-500 mt-4 leading-relaxed">AI is complex. Learning high-level logic in your mother tongue ensures you truly understand the "why" before you learn the "how" in English-based tools.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto px-6 py-20 bg-white">
+    <h2 class="text-3xl font-800 text-[#1a2433] mb-10 text-center">What's In It For You?</h2>
+    <div class="space-y-4">
+        <div class="flex items-start gap-4 p-4 border border-gray-100 rounded-xl hover:bg-gray-50">
+            <span class="n8n-orange font-bold text-xl">✓</span>
+            <p class="text-gray-600"><strong>The New Internet:</strong> GenAI is the biggest shift since 1995. This is your chance to be an early adopter</p>
+        </div>
+        <div class="flex items-start gap-4 p-4 border border-gray-100 rounded-xl hover:bg-gray-50">
+            <span class="n8n-orange font-bold text-xl">✓</span>
+            <p class="text-gray-600"><strong>Pilot vs. Passenger:</strong> Don't just watch AI happen. Learn to control it before it changes your industry.</p>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 border border-gray-100 rounded-xl hover:bg-gray-50">
+            <span class="n8n-orange font-bold text-xl">✓</span>
+            <p class="text-gray-600"><strong>10x Productivity:</strong> Automate boring tasks and focus on creative growth.</p>
+        </div>
+        <div class="flex items-start gap-4 p-4 border border-gray-100 rounded-xl hover:bg-gray-50">
+            <span class="n8n-orange font-bold text-xl">✓</span>
+            <p class="text-gray-600"><strong>Digital Employee:</strong> Build agents that search, plan, and execute tasks 24/7.</p>
+        </div>
+        <div class="flex items-start gap-4 p-4 border border-gray-100 rounded-xl hover:bg-gray-50">
+            <span class="n8n-orange font-bold text-xl">✓</span>
+            <p class="text-gray-600"><strong>Consulting Income:</strong> Learn to build and sell AI automations to businesses.</p>
+        </div>
+        <div class="flex items-start gap-4 p-4 border border-gray-100 rounded-xl hover:bg-gray-50">
+            <span class="n8n-orange font-bold text-xl">✓</span>
+            <p class="text-gray-600"><strong>Tamil Clarity:</strong> Master complex AI logic in your mother tongue with zero confusion.</p>
+        </div>
+        <div class="flex items-start gap-4 p-4 border border-gray-100 rounded-xl hover:bg-gray-50">
+            <span class="n8n-orange font-bold text-xl">✓</span>
+            <p class="text-gray-600"><strong>Resource Vault:</strong> Instant access to n8n templates and a private Discord community.</p>
+        </div>
+    </div>
+</section>
+
+        <section id="register" class="text-center pb-20">
+            <div class="bg-[#1a2433] text-white p-16 rounded-[3rem] shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-40 h-40 n8n-bg-orange opacity-10 rounded-full blur-3xl"></div>
+                <h2 class="text-4xl font-800 mb-6">Join the Gen AI Revolution.</h2>
+                <p class="text-gray-400 mb-10 max-w-lg mx-auto">Limited seats to ensure high touch learning. Secure your spot in the 2026 Tamil cohort.</p>
+                <button class="n8n-bg-orange text-white px-12 py-5 rounded-xl font-800 text-xl hover:scale-105 transition-transform shadow-xl shadow-orange-500/20">
+                    Register To Bootcamp
+                </button>
+            </div>
+        </section>
+
+
+        <section id="contact" class="max-w-4xl mx-auto mb-32 p-10 bg-white border border-gray-100 rounded-[2.5rem] card-shadow text-center">
+            <h2 class="text-3xl font-800 mb-4">Have Questions?</h2>
+            <p class="text-gray-500 mb-10">Contact us directly via WhatsApp, Phone, or Email.</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="https://wa.me/919176409201" class="flex flex-col items-center p-6 rounded-2xl bg-[#25D366]/10 border border-[#25D366]/20 hover:scale-105 transition-transform">
+                    <span class="text-3xl mb-3">💬</span>
+                    <span class="font-bold text-[#25D366]">WhatsApp</span>
+                    <span class="text-xs text-gray-500 mt-1">+91 9176409201</span>
+                </a>
+                <a href="tel:+919176409201" class="flex flex-col items-center p-6 rounded-2xl bg-blue-50 border border-blue-100 hover:scale-105 transition-transform">
+                    <span class="text-3xl mb-3">📞</span>
+                    <span class="font-bold text-blue-600">Call Us</span>
+                    <span class="text-xs text-gray-500 mt-1">+91 9176409201</span>
+                </a>
+                <a href="mailto:syedjaferk@parottasalna.com" class="flex flex-col items-center p-6 rounded-2xl bg-orange-50 border border-orange-100 hover:scale-105 transition-transform">
+                    <span class="text-3xl mb-3">✉️</span>
+                    <span class="font-bold n8n-orange">Email</span>
+                    <span class="text-xs text-gray-500 mt-1">syedjaferk@parottasalna.com</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        const track = document.getElementById('track');
+        let index = 0;
+        function jump(i) {
+            index = i;
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+        // Auto play every 6s
+        setInterval(() => {
+            index = (index + 1) % 3;
+            jump(index);
+        }, 6000);
+    </script>
+</body>
+</html>
